@@ -1,4 +1,4 @@
-package com.lemon.demo.pojo;
+package com.lemon.pojo.vo;
 
 public class User {
     private Integer id;

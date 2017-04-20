@@ -1,6 +1,6 @@
-package com.lemon.demo.service;
+package com.lemon.service;
 
-import com.lemon.demo.pojo.User;
+import com.lemon.pojo.vo.User;
 
 public interface IUserService {
 

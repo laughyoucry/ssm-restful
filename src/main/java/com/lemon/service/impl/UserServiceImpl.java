@@ -1,12 +1,12 @@
-package com.lemon.demo.service.impl;
+package com.lemon.service.impl;
 
 import javax.annotation.Resource;
 
+import com.lemon.dao.IUserDao;
+import com.lemon.service.IUserService;
 import org.springframework.stereotype.Service;
 
-import com.lemon.demo.dao.IUserDao;
-import com.lemon.demo.pojo.User;
-import com.lemon.demo.service.IUserService;
+import com.lemon.pojo.vo.User;
 
 @Service("userService")
 public class UserServiceImpl implements IUserService {

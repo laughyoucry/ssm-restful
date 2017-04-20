@@ -1,13 +1,13 @@
-package com.lemon.demo.dao.impl;
+package com.lemon.dao.impl;
 
 import javax.annotation.Resource;
 
+import com.lemon.dao.IUserDao;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.springframework.stereotype.Service;
 
-import com.lemon.demo.dao.IUserDao;
-import com.lemon.demo.pojo.User;
+import com.lemon.pojo.vo.User;
 
 @Service("userDao")
 public class UserDaoImpl implements IUserDao {
@@ -24,7 +24,7 @@ public class UserDaoImpl implements IUserDao {
 	@Override
 	public int insert(User record) {
 		SqlSession session = sqlSessionFactory.openSession();
-		int result = session.insert("com.lemon.demo.mapping.UserMapper.insert", record);
+		int result = session.insert("com.lemon.mapping.UserMapper.insert", record);
 		session.close();
 		return result;
 	}
@@ -38,7 +38,7 @@ public class UserDaoImpl implements IUserDao {
 	@Override
 	public User selectByPrimaryKey(Integer id) {
 		SqlSession session = sqlSessionFactory.openSession();
-		User user = session.selectOne("com.lemon.demo.mapping.UserMapper.selectByPrimaryKey", id);
+		User user = session.selectOne("com.lemon.mapping.UserMapper.selectByPrimaryKey", id);
 		session.close();
 		return user;
 	}

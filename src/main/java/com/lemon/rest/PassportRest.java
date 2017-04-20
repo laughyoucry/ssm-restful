@@ -1,4 +1,4 @@
-package com.lemon.demo.rest;/*
+package com.lemon.rest;/*
  * Copyright (C), 2015-${year}, CIBFINTECH
  * FileName: ${file_name}
  * Author:   ${user}

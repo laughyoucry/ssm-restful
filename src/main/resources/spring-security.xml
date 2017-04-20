@@ -8,11 +8,12 @@
           http://www.springframework.org/schema/security/spring-security-4.0.xsd">
 
     <!--<security:http auto-config="true" use-expressions="false">-->
-        <!--<security:intercept-url pattern="/**" access="ROLE_USER"/>-->
+    <!--<security:intercept-url pattern="/**" access="ROLE_USER"/>-->
     <!--</security:http>-->
 
     <security:http auto-config="true">
-        <security:form-login login-page="/login.jsp" login-processing-url="/login.do" username-parameter="username" password-parameter="password"/>
+        <security:form-login login-page="/login.jsp" login-processing-url="/login.do" username-parameter="username"
+                             password-parameter="password"/>
         <security:intercept-url pattern="/login.jsp" access="IS_AUTHENTICATED_ANONYMOUSLY"/>
         <security:intercept-url pattern="/**" access="ROLE_USER"/>
     </security:http>

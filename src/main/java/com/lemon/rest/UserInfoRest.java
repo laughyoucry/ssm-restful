@@ -1,7 +1,8 @@
-package com.lemon.demo.rest;
+package com.lemon.rest;
 
 import javax.annotation.Resource;
 
+import com.lemon.service.IUserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,8 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import com.lemon.demo.pojo.User;
-import com.lemon.demo.service.IUserService;
+import com.lemon.pojo.vo.User;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;

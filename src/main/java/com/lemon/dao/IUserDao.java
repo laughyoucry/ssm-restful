@@ -1,6 +1,6 @@
-package com.lemon.demo.dao;
+package com.lemon.dao;
 
-import com.lemon.demo.pojo.User;
+import com.lemon.pojo.vo.User;
 
 public interface IUserDao {
 
