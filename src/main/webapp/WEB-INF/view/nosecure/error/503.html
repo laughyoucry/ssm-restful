@@ -1,0 +1,36 @@
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="viewport" content="user-scalable=no,initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="format-detection" content="telephone=no">
+<meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-touch-fullscreen" content="yes"/>
+<link rel="stylesheet" type="text/css" href="resources/css/css.css"/>
+<script type="text/javascript" src="resources/js/zepto.min.js"></script>
+<script type="text/javascript" src="resources/js/jsencrypt.js"></script>
+<script type="text/javascript">
+    function msg(msg) {
+        $('#tczz').show().css('height', $(document).height());
+        $("#tccnr").html(msg);
+        $('#tccbox').show().css({
+            'top': ($(document).height() / 2) - ($('#tccbox').height() / 2),
+            'left': ($(document).width() / 2) - ($('#tccbox').width() / 2)
+        });
+    }
+</script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="tit1" align="center">温馨提示</div>
+    <ul class="lisbox">
+        <li>
+            <span class="bdmc">错误原因:</span>
+            <span class="txtc">页面暂时无法访问，请检查您的网络环境后重试！</span>
+        </li>
+    </ul>
+    <div class="foot"></div>
+</div>
+
+</body>
+</html>
