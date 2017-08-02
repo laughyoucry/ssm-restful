@@ -2,19 +2,20 @@
 ssm为基础，采用restful风格，集成spring security，swagger等
 
 ## 响应报文格式
-格式为:
-{
-    "meta":{
-        "code" : "0",
-        "msg" : "",
-        "msgs": [],
-        "filter" : false
-    },
-    "data":{
-        // 数据
+#### 格式为:
+    {
+        "meta":{
+            "code" : "0",
+            "msg" : "",
+            "msgs": [],
+            "filter" : false
+        },
+        "data":{
+            // 数据
+        }
     }
-}
-说明：
+
+#### 说明：
     meta: 消息头.
     code: 为0时表示成功，其他情况都是失败
     msg: 失败时返回的信息
